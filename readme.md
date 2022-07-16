@@ -5,13 +5,12 @@
 ### Includes
 - work with api (coinbase, coinmarket, coinpaprika, kucoin, coinstat)
 - token-based auth
-- db included
 - used pagination (<i>/api/v1/currency/?offset=2</i>)
 - use cron to update db data
 ### Endpoints
 <ul>
 <li><code>http://[your_host]:[your_port]/admin/</code> - admin panel</li>
-<li><code>http://[your_host]:[your_port]/api/v1/market/<str:market>/</code> - get currency rate for current market</li>
+<li><code>http://[your_host]:[your_port]/api/v1/market/[market]/</code> - get currency rate for current market</li>
 <li><code>http://[your_host]:[your_port]/api/v1/auth/users/</code> - user registration (POST)</li>
 <li><code>http://[your_host]:[your_port]/auth/token/login/</code> - login and receive token (POST)</li>
 <li><code>http://[your_host]:[your_port]/api/v1/currency/</code> - use with header {Authorization: Token 'YOUR_TOKEN'} {GET}</li>
